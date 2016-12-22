@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ContosoUniversity.ViewModels.EnrollmentDateGroup>
+
+@{
+    ViewBag.Title = "Profile";
+}
+<div class="row">
+    <div class="col-md-12">
+        <div class="input-group">
+            <span class="input-group-addon" id="sizing-addon1">IRCI Search</span>
+            <input type="text" id="searchTop" class="form-control" placeholder="Input keyword...">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span>  Search</button>
+            </span>
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+<div class="row">
+    <hr />
+    <div class="col-sm-12">
+        <div class="citation">
+            <div class="table-responsive">
+                <table class="table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Authors</th>
+                            <th>Papers</th>
+                            <th>Cited</th>
+                            <th>Year</th>
+                            <th>Deails</th>
+                            <th>Merge</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Apparatus for detecting, receiving, deriving and displaying human physiological and contextual information</td>
+                            <td>J Stivoric, C Pacione, E Teller, D Andre, C Kasabach, S Boehmke</td>
+                            <td>US Patent 7,285,090</td>
+                            <td>261</td>
+                            <td>2007</td>
+                            <td><button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-zoom-in"></span>  Details</button></td>
+                            <td><button type="button" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-random"></span>  Merge</button></td>
+                        </tr>
+                        <tr>
+                            <td>Apparatus for detecting, receiving, deriving and displaying human physiological and contextual information</td>
+                            <td>J Stivoric, C Pacione, E Teller, D Andre, C Kasabach, S Boehmke</td>
+                            <td>US Patent 7,285,090</td>
+                            <td>261</td>
+                            <td>2007</td>
+                            <td><button type="button" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-zoom-in"></span>  Details</button></td>
+                            <td><button type="button" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-random"></span>  Merge</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />

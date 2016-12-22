@@ -1,0 +1,242 @@
+﻿html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: black;
+    border-color: #00acff;
+}
+
+body > .container {
+    padding: 20px 15px 0;
+}
+.container .text-muted {
+    margin: 20px 0;
+    color: #e7e7e7;
+    text-align: center;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* FORM LOGIN */
+
+.form-title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: lighter;
+    color: white
+}
+
+.card-container.card {
+    max-width: 600px;
+    padding: 40px 40px;
+}
+
+.card-container.card.request{
+    margin-top: 15px;
+    max-width: 600px;
+    padding-bottom: 25px;
+    padding-top: 30px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 38px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+/*
+ * Card component
+ */
+.card {
+    background-color: black;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 80px;
+    /* shadows and rounded borders */
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.form-signin #inputOLDPASS,
+.form-signin #inputNEWPASS,
+.form-signin #inputCONFIRMPASS,
+.form-signin #inputNRP,
+.form-signin #inputPASSWORD {
+    direction: ltr;
+    height: 44px;
+    font-size: 15px;
+}
+
+
+
+.form-label{
+    color: white;
+    font-weight: 200;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+
+.btn.btn-signin {
+    /*background-color: #4d90fe; */
+    background-color: rgb(0, 172, 255);
+    /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+    padding: 0px;
+    font-weight: 100;
+    font-size: 18px;
+    height: 42px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+    margin-top: 15px;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color: rgb(106, 255, 0);
+}
+
+.form-signin #keyword{
+    direction: ltr;
+    height: 44px;
+    font-size: 15px;
+}
+
+.form-signin input[type=number],
+.form-signin input[type=password],
+.form-signin input[type=text] {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width:100%;
+}
+
+.table-striped{
+    width:100%;
+}
+
+#searchTop{
+    height:38px;
+    max-width:100%;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: rgba(208, 208, 208, 0.37);
+}
+
+button.btn.btn-danger.btn-xs,
+button.btn.btn-warning.btn-xs,
+button.btn.btn-success.btn-xs,
+button.btn.btn-info.btn-xs{
+    height: 25px;
+}
+table.table.table-striped > tbody >tr >td{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/* participant button */
+.btn-info {
+    background-color: #00acff;
+    border-color: #00acff;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active    {
+    background-color: #0f95ff;
+    border-top-color: white;
+}
+
+/* participant button */
+.btn-success {
+    background-color: #5fdf00;
+    border-color: #5fdf00;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active    {
+    background-color: #57c600;
+    border-color: white;
+}
+
+/* participant button */
+.btn-warning {
+    background-color: #ff1f8c;
+    border-color: #ff1f8c;
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active    {
+    background-color: #ff006d;
+    border-color: white;
+}
+
+/* participant button */
+.btn-danger {
+    background-color: #f26f23;
+    border-color: #f26f23;
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active    {
+    background-color: #ff7224;
+    border-color: white;
+}

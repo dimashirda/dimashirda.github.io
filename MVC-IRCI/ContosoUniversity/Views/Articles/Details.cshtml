@@ -1,0 +1,74 @@
+﻿@model ContosoUniversity.Models.Article
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Article</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.author)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.date_submission)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.date_submission)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reference_title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reference_title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reference_year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reference_year)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.reference_author)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.reference_author)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
